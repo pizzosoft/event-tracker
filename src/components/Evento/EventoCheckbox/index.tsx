@@ -10,10 +10,10 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
     const eventoAlterado = {
       ...evento
     }
-    eventoAlterado.completo = !evento.completo
-
+    eventoAlterado.completo = !eventoAlterado.completo
     atualizarEvento(eventoAlterado)
   }
+  
   const estilos = [
     'far',
     'fa-2x',
